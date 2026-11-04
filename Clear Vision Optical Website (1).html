@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Vision Optical - Premium Eyewear in North Bongaigaon</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        tealBrand: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            700: '#0f766e',
+                            800: '#115e59',
+                            900: '#134e4a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-tealBrand-800 text-teal-100 text-xs sm:text-sm py-2 px-4 text-center flex justify-between items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center gap-4 mx-auto sm:mx-0">
+            <span><i class="fa-solid fa-location-dot text-teal-300 mr-1.5"></i> North Bongaigaon</span>
+            <span class="hidden md:inline"><i class="fa-solid fa-truck-fast text-teal-300 mr-1.5"></i> Home Delivery Available</span>
+        </div>
+        <div class="hidden sm:flex items-center gap-4 font-medium">
+            <a href="tel:8811006544" class="hover:text-white transition-colors"><i class="fa-solid fa-phone text-teal-300 mr-1"></i> +91 8811006544</a>
+            <a href="https://wa.me/918811006544" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white px-2.5 py-0.5 rounded-full text-xs font-semibold flex items-center gap-1 transition-colors">
+                <i class="fa-brands fa-whatsapp"></i> Chat Now
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-tealBrand-700 to-tealBrand-500 flex items-center justify-center text-white text-xl shadow-md group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-glasses"></i>
+                </div>
+                <div>
+                    <span class="block text-xl font-bold tracking-tight text-slate-900 group-hover:text-tealBrand-700 transition-colors">CLEAR VISION</span>
+                    <span class="block text-[10px] font-semibold tracking-widest text-tealBrand-600 uppercase -mt-1">OPTICAL & EYEWEAR</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600 text-sm">
+                <a href="#home" class="hover:text-tealBrand-700 transition-colors">Home</a>
+                <a href="#services" class="hover:text-tealBrand-700 transition-colors">Products & Services</a>
+                <a href="#collection" class="hover:text-tealBrand-700 transition-colors">Collection</a>
+                <a href="#why-us" class="hover:text-tealBrand-700 transition-colors">Why Choose Us</a>
+                <a href="#contact" class="hover:text-tealBrand-700 transition-colors">Contact</a>
+            </nav>
+
+            <!-- CTA Actions -->
+            <div class="flex items-center gap-3">
+                <a href="tel:8811006544" class="hidden sm:inline-flex items-center gap-2 bg-tealBrand-700 hover:bg-tealBrand-800 text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-md shadow-tealBrand-700/20 transition-all hover:shadow-lg">
+                    <i class="fa-solid fa-phone-volume"></i> Call Now
+                </a>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-slate-700 text-2xl p-2 rounded-lg hover:bg-slate-100 focus:outline-none" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Nav -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-100 px-4 pt-3 pb-6 space-y-3">
+            <a href="#home" class="block py-2 text-slate-700 font-medium hover:text-tealBrand-700">Home</a>
+            <a href="#services" class="block py-2 text-slate-700 font-medium hover:text-tealBrand-700">Products & Services</a>
+            <a href="#collection" class="block py-2 text-slate-700 font-medium hover:text-tealBrand-700">Collection</a>
+            <a href="#why-us" class="block py-2 text-slate-700 font-medium hover:text-tealBrand-700">Why Choose Us</a>
+            <a href="#contact" class="block py-2 text-slate-700 font-medium hover:text-tealBrand-700">Contact</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <a href="tel:8811006544" class="w-full text-center bg-tealBrand-700 text-white py-2.5 rounded-xl font-semibold">
+                    <i class="fa-solid fa-phone mr-2"></i> Call 8811006544
+                </a>
+                <a href="https://wa.me/918811006544" target="_blank" class="w-full text-center bg-emerald-600 text-white py-2.5 rounded-xl font-semibold">
+                    <i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp Us
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative overflow-hidden bg-gradient-to-b from-tealBrand-50/60 via-slate-50 to-slate-50 py-16 lg:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-tealBrand-100 text-tealBrand-800 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide uppercase">
+                        <i class="fa-solid fa-star text-amber-500"></i> Premium Eyewear Destination
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                        STYLISH LOOK – <span class="text-transparent bg-clip-text bg-gradient-to-r from-tealBrand-700 to-tealBrand-500">CLEAR VISION</span>
+                    </h1>
+                    
+                    <p class="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Discover top-quality power lenses, stylish eyeglass frames, and trendy eyewear at unbeatable prices in North Bongaigaon.
+                    </p>
+
+                    <!-- Features Badges -->
+                    <div class="pt-2 grid grid-cols-2 sm:grid-cols-3 gap-3 text-left">
+                        <div class="flex items-center gap-2 bg-white p-3 rounded-xl shadow-sm border border-slate-100">
+                            <i class="fa-solid fa-circle-check text-tealBrand-600 text-lg"></i>
+                            <span class="text-xs sm:text-sm font-semibold text-slate-700">All Power Lenses</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-white p-3 rounded-xl shadow-sm border border-slate-100">
+                            <i class="fa-solid fa-circle-check text-tealBrand-600 text-lg"></i>
+                            <span class="text-xs sm:text-sm font-semibold text-slate-700">Trendy Frames</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-white p-3 rounded-xl shadow-sm border border-slate-100 col-span-2 sm:col-span-1">
+                            <i class="fa-solid fa-circle-check text-tealBrand-600 text-lg"></i>
+                            <span class="text-xs sm:text-sm font-semibold text-slate-700">Home Delivery</span>
+                        </div>
+                    </div>
+
+                    <!-- Hero Action Buttons -->
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="tel:8811006544" class="w-full sm:w-auto px-8 py-4 bg-tealBrand-700 hover:bg-tealBrand-800 text-white font-bold rounded-2xl shadow-lg shadow-tealBrand-700/30 transition-all transform hover:-translate-y-0.5 text-center flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-phone text-lg"></i> Call 8811006544
+                        </a>
+                        <a href="https://wa.me/918811006544" target="_blank" class="w-full sm:w-auto px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-2xl shadow-lg shadow-emerald-600/20 transition-all transform hover:-translate-y-0.5 text-center flex items-center justify-center gap-3">
+                            <i class="fa-brands fa-whatsapp text-xl"></i> Order via WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Right Image Showcase -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Decorative background element -->
+                        <div class="absolute -top-6 -left-6 w-72 h-72 bg-tealBrand-200 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-pulse"></div>
+                        <div class="absolute -bottom-6 -right-6 w-72 h-72 bg-amber-200 rounded-full mix-blend-multiply filter blur-2xl opacity-70"></div>
+                        
+                        <!-- Main Card / Image -->
+                        <div class="relative bg-white p-4 rounded-3xl shadow-2xl border border-slate-100">
+                            <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80" alt="Clear Vision Optical Eyewear Collection" class="rounded-2xl w-full h-[380px] object-cover">
+                            
+                            <!-- Floating Badge -->
+                            <div class="absolute bottom-8 left-8 right-8 glass-card p-4 rounded-2xl border border-white/40 shadow-lg flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-amber-500 text-white flex items-center justify-center text-xl font-bold">
+                                    <i class="fa-solid fa-thumbs-up"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 text-sm">Customer Satisfaction</h4>
+                                    <p class="text-xs text-slate-600 font-medium">Guaranteed Best Quality & Fast Delivery</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Promises & Highlights Banner -->
+    <section class="py-12 bg-white border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Feature 1 -->
+                <div class="flex items-start gap-4 p-6 rounded-2xl bg-slate-50/80 hover:bg-tealBrand-50/50 transition-colors border border-slate-100">
+                    <div class="w-14 h-14 rounded-2xl bg-tealBrand-100 text-tealBrand-700 flex items-center justify-center text-2xl shrink-0">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900">Best Quality</h3>
+                        <p class="text-sm text-slate-600 mt-1">Durable frames & precision-engineered optical lenses built to last.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="flex items-start gap-4 p-6 rounded-2xl bg-slate-50/80 hover:bg-tealBrand-50/50 transition-colors border border-slate-100">
+                    <div class="w-14 h-14 rounded-2xl bg-tealBrand-100 text-tealBrand-700 flex items-center justify-center text-2xl shrink-0">
+                        <i class="fa-solid fa-truck-ramp-box"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900">Fast Delivery</h3>
+                        <p class="text-sm text-slate-600 mt-1">Hassle-free home delivery straight to your doorstep across Bongaigaon.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="flex items-start gap-4 p-6 rounded-2xl bg-slate-50/80 hover:bg-tealBrand-50/50 transition-colors border border-slate-100">
+                    <div class="w-14 h-14 rounded-2xl bg-tealBrand-100 text-tealBrand-700 flex items-center justify-center text-2xl shrink-0">
+                        <i class="fa-solid fa-smile-beam"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900">Customer Satisfaction</h3>
+                        <p class="text-sm text-slate-600 mt-1">Friendly service, expert optical advice, and transparent pricing.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Products & Services Section -->
+    <section id="services" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-xs font-extrabold tracking-widest text-tealBrand-600 uppercase bg-tealBrand-100/70 px-3 py-1 rounded-full">OUR OFFERINGS</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Our Products & Services</h2>
+                <p class="text-slate-600">Everything you need for sharp eyesight and a stylish look under one roof.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-16 h-16 rounded-2xl bg-tealBrand-50 text-tealBrand-600 flex items-center justify-center text-3xl mb-6 group-hover:scale-110 group-hover:bg-tealBrand-700 group-hover:text-white transition-all">
+                            <i class="fa-solid fa-glasses"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Power Lenses</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Single vision, bifocal, progressive, anti-glare, blue-cut, and photochromic lenses available for all prescriptions.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-tealBrand-700">
+                        <span>All Types Available</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-16 h-16 rounded-2xl bg-tealBrand-50 text-tealBrand-600 flex items-center justify-center text-3xl mb-6 group-hover:scale-110 group-hover:bg-tealBrand-700 group-hover:text-white transition-all">
+                            <i class="fa-solid fa-frame-check"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Eyeglass Frames</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Huge collection of lightweight metal, acetate, rimless, and trendy frames for men, women, and kids.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-tealBrand-700">
+                        <span>Stylish Designs</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-16 h-16 rounded-2xl bg-tealBrand-50 text-tealBrand-600 flex items-center justify-center text-3xl mb-6 group-hover:scale-110 group-hover:bg-tealBrand-700 group-hover:text-white transition-all">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Premium Quality</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Handpicked premium eyewear designed for durability, maximum comfort, and optimal optical clarity.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-tealBrand-700">
+                        <span>Guaranteed Quality</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-16 h-16 rounded-2xl bg-tealBrand-50 text-tealBrand-600 flex items-center justify-center text-3xl mb-6 group-hover:scale-110 group-hover:bg-tealBrand-700 group-hover:text-white transition-all">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Home Delivery</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Get your custom-fitted power specs delivered safely directly to your home in Bongaigaon.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-tealBrand-700">
+                        <span>Quick Service</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Eyewear Catalog Showcase Section -->
+    <section id="collection" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div>
+                    <span class="text-xs font-extrabold tracking-widest text-tealBrand-600 uppercase bg-tealBrand-100/70 px-3 py-1 rounded-full">EYEWEAR CATALOG</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Explore Popular Styles</h2>
+                    <p class="text-slate-600 text-sm mt-1">Browse through our stylish optical frame categories.</p>
+                </div>
+                
+                <!-- Filter Buttons -->
+                <div class="flex flex-wrap gap-2" id="filterContainer">
+                    <button onclick="filterCatalog('all')" class="catalog-btn bg-tealBrand-700 text-white px-4 py-2 rounded-xl text-xs font-bold transition-all shadow-sm">All Styles</button>
+                    <button onclick="filterCatalog('eyeglasses')" class="catalog-btn bg-slate-100 hover:bg-slate-200 text-slate-700 px-4 py-2 rounded-xl text-xs font-bold transition-all">Eyeglasses</button>
+                    <button onclick="filterCatalog('sunglasses')" class="catalog-btn bg-slate-100 hover:bg-slate-200 text-slate-700 px-4 py-2 rounded-xl text-xs font-bold transition-all">Sunglasses</button>
+                    <button onclick="filterCatalog('premium')" class="catalog-btn bg-slate-100 hover:bg-slate-200 text-slate-700 px-4 py-2 rounded-xl text-xs font-bold transition-all">Premium</button>
+                </div>
+            </div>
+
+            <!-- Product Cards Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" id="productGrid">
+                
+                <!-- Product 1 -->
+                <div class="product-item eyeglasses bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 hover:shadow-lg transition-all group">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&w=600&q=80" alt="Modern Eyeglasses" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 bg-tealBrand-700 text-white text-[10px] font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider">Best Seller</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-slate-900 text-base">Modern Executive Eyeglasses</h4>
+                        <p class="text-xs text-slate-500 mt-1">Lightweight, durable acetate frame compatible with all power lenses.</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-1 rounded-md">Affordable Price</span>
+                            <a href="https://wa.me/918811006544?text=Hi%20Clear%20Vision%20Optical,%20I%20am%20interested%20in%20Modern%20Executive%20Eyeglasses" target="_blank" class="bg-tealBrand-700 hover:bg-tealBrand-800 text-white p-2.5 rounded-xl text-xs font-bold flex items-center gap-1 transition-colors">
+                                <i class="fa-brands fa-whatsapp text-sm"></i> Inquiry
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-item sunglasses premium bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 hover:shadow-lg transition-all group">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1508296695146-257a814070b4?auto=format&fit=crop&w=600&q=80" alt="Classic Sunglasses" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 bg-amber-500 text-white text-[10px] font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider">Trending</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-slate-900 text-base">Classic UV Protection Sunglasses</h4>
+                        <p class="text-xs text-slate-500 mt-1">100% UV400 protection with polarized clarity for outdoor style.</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-1 rounded-md">Premium Finish</span>
+                            <a href="https://wa.me/918811006544?text=Hi%20Clear%20Vision%20Optical,%20I%20am%20interested%20in%20Classic%20Sunglasses" target="_blank" class="bg-tealBrand-700 hover:bg-tealBrand-800 text-white p-2.5 rounded-xl text-xs font-bold flex items-center gap-1 transition-colors">
+                                <i class="fa-brands fa-whatsapp text-sm"></i> Inquiry
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-item eyeglasses premium bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 hover:shadow-lg transition-all group">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&w=600&q=80" alt="Stylish Frames" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-slate-900 text-base">Pro Blue-Cut Computer Glasses</h4>
+                        <p class="text-xs text-slate-500 mt-1">Shield your eyes from screen glare & strain. High quality lenses.</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-1 rounded-md">Anti-Glare</span>
+                            <a href="https://wa.me/918811006544?text=Hi%20Clear%20Vision%20Optical,%20I%20am%20interested%20in%20Blue-Cut%20Computer%20Glasses" target="_blank" class="bg-tealBrand-700 hover:bg-tealBrand-800 text-white p-2.5 rounded-xl text-xs font-bold flex items-center gap-1 transition-colors">
+                                <i class="fa-brands fa-whatsapp text-sm"></i> Inquiry
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-item eyeglasses bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 hover:shadow-lg transition-all group">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1509668510823-ef40f395f33d?auto=format&fit=crop&w=600&q=80" alt="Slim Metal Frames" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-slate-900 text-base">Slim Minimalist Metal Frames</h4>
+                        <p class="text-xs text-slate-500 mt-1">Ultra-comfortable, feather-light metal frame collection.</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-1 rounded-md">Super Light</span>
+                            <a href="https://wa.me/918811006544?text=Hi%20Clear%20Vision%20Optical,%20I%20am%20interested%20in%20Slim%20Metal%20Frames" target="_blank" class="bg-tealBrand-700 hover:bg-tealBrand-800 text-white p-2.5 rounded-xl text-xs font-bold flex items-center gap-1 transition-colors">
+                                <i class="fa-brands fa-whatsapp text-sm"></i> Inquiry
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="py-20 bg-tealBrand-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Image -->
+                <div class="lg:col-span-5">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1598166542289-e160cc124d5f?auto=format&fit=crop&w=800&q=80" alt="Optician examining power lenses" class="rounded-3xl shadow-2xl border-4 border-tealBrand-800 w-full object-cover h-[450px]">
+                        <div class="absolute -bottom-6 -right-6 bg-amber-500 text-slate-900 p-5 rounded-2xl shadow-xl font-extrabold max-w-[200px] text-center">
+                            <span class="text-2xl block">#1 CHOICE</span>
+                            <span class="text-xs uppercase tracking-wider font-semibold">In North Bongaigaon</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Reasons Checklist -->
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="text-xs font-extrabold tracking-widest text-teal-300 uppercase bg-tealBrand-800 px-3.5 py-1 rounded-full border border-tealBrand-700">ADVANTAGE CLEAR VISION</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Why Choose Us?</h2>
+                    <p class="text-teal-100 text-base">We prioritize your visual comfort, offering quality eyewear tailored to your exact prescription and personal style.</p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        
+                        <div class="flex items-center gap-3 bg-tealBrand-800/80 p-4 rounded-2xl border border-tealBrand-700">
+                            <div class="w-10 h-10 rounded-xl bg-tealBrand-500 text-white flex items-center justify-center font-bold text-lg shrink-0">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span class="font-semibold text-sm text-teal-50">All Types of Power Lenses</span>
+                        </div>
+
+                        <div class="flex items-center gap-3 bg-tealBrand-800/80 p-4 rounded-2xl border border-tealBrand-700">
+                            <div class="w-10 h-10 rounded-xl bg-tealBrand-500 text-white flex items-center justify-center font-bold text-lg shrink-0">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span class="font-semibold text-sm text-teal-50">All Types of Frames</span>
+                        </div>
+
+                        <div class="flex items-center gap-3 bg-tealBrand-800/80 p-4 rounded-2xl border border-tealBrand-700">
+                            <div class="w-10 h-10 rounded-xl bg-tealBrand-500 text-white flex items-center justify-center font-bold text-lg shrink-0">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span class="font-semibold text-sm text-teal-50">Premium Quality Eyewear</span>
+                        </div>
+
+                        <div class="flex items-center gap-3 bg-tealBrand-800/80 p-4 rounded-2xl border border-tealBrand-700">
+                            <div class="w-10 h-10 rounded-xl bg-tealBrand-500 text-white flex items-center justify-center font-bold text-lg shrink-0">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span class="font-semibold text-sm text-teal-50">Affordable Prices</span>
+                        </div>
+
+                        <div class="flex items-center gap-3 bg-tealBrand-800/80 p-4 rounded-2xl border border-tealBrand-700">
+                            <div class="w-10 h-10 rounded-xl bg-tealBrand-500 text-white flex items-center justify-center font-bold text-lg shrink-0">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span class="font-semibold text-sm text-teal-50">Home Delivery Available</span>
+                        </div>
+
+                        <div class="flex items-center gap-3 bg-tealBrand-800/80 p-4 rounded-2xl border border-tealBrand-700">
+                            <div class="w-10 h-10 rounded-xl bg-tealBrand-500 text-white flex items-center justify-center font-bold text-lg shrink-0">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span class="font-semibold text-sm text-teal-50">Stylish Eyeglass Collection</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Call-To-Action & Consultation Form -->
+    <section id="contact" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-white to-tealBrand-50 rounded-3xl p-8 sm:p-12 shadow-xl border border-slate-200/80">
+                <div class="grid lg:grid-cols-12 gap-10 items-center">
+                    
+                    <div class="lg:col-span-6 space-y-6">
+                        <span class="text-xs font-extrabold tracking-widest text-tealBrand-600 uppercase bg-white px-3.5 py-1 rounded-full border border-slate-200 shadow-sm">VISIT OR CALL US TODAY</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Get Your Perfect Pair Today</h2>
+                        <p class="text-slate-600 leading-relaxed">Have questions about your spectacle prescription or want to check frame availability? Give us a call or visit our store in North Bongaigaon.</p>
+                        
+                        <div class="space-y-4 pt-2">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-tealBrand-700 text-white flex items-center justify-center text-xl shrink-0 shadow-md">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <span class="block text-xs font-bold text-slate-500 uppercase tracking-wider">Phone Contact</span>
+                                    <a href="tel:8811006544" class="text-xl font-extrabold text-slate-900 hover:text-tealBrand-700 transition-colors">8811006544</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-tealBrand-700 text-white flex items-center justify-center text-xl shrink-0 shadow-md">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <span class="block text-xs font-bold text-slate-500 uppercase tracking-wider">Store Address</span>
+                                    <span class="text-lg font-extrabold text-slate-900">North Bongaigaon, Assam</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 flex flex-wrap gap-4">
+                            <a href="tel:8811006544" class="px-6 py-3.5 bg-tealBrand-700 hover:bg-tealBrand-800 text-white font-bold rounded-xl shadow-md transition-all flex items-center gap-2">
+                                <i class="fa-solid fa-phone"></i> Call Now
+                            </a>
+                            <a href="https://wa.me/918811006544" target="_blank" class="px-6 py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl shadow-md transition-all flex items-center gap-2">
+                                <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Simple Request / Callback Form -->
+                    <div class="lg:col-span-6 bg-white p-8 rounded-2xl shadow-lg border border-slate-100">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Request Eyewear Callback</h3>
+                        <p class="text-xs text-slate-500 mb-6">Leave your details and we will call you back to discuss frames or lens options.</p>
+                        
+                        <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Your Name</label>
+                                <input type="text" id="custName" required placeholder="Enter full name" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-tealBrand-600 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Phone Number</label>
+                                <input type="tel" id="custPhone" required placeholder="Enter 10-digit mobile number" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-tealBrand-600 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Service Needed</label>
+                                <select id="custService" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-tealBrand-600 text-sm">
+                                    <option value="Power Lenses">Power Lenses</option>
+                                    <option value="Eyeglass Frames">Eyeglass Frames</option>
+                                    <option value="Sunglasses">Sunglasses</option>
+                                    <option value="Home Delivery Request">Home Delivery Request</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="w-full py-3.5 bg-tealBrand-700 hover:bg-tealBrand-800 text-white font-bold rounded-xl shadow-md transition-colors text-sm">
+                                Submit Callback Request
+                            </button>
+                        </form>
+                        <div id="formAlert" class="hidden mt-4 p-3 bg-emerald-50 text-emerald-800 rounded-xl text-xs font-semibold text-center border border-emerald-200">
+                            Thank you! Your request has been sent via WhatsApp.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-12 gap-10 pb-12 border-b border-slate-800">
+                
+                <!-- Footer Col 1 -->
+                <div class="md:col-span-5 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-tealBrand-600 flex items-center justify-center text-white text-lg font-bold">
+                            <i class="fa-solid fa-glasses"></i>
+                        </div>
+                        <span class="text-xl font-bold tracking-tight text-white">CLEAR VISION OPTICAL</span>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed max-w-sm">
+                        PREMIUM EYEWEAR — SEE BETTER, LIVE BETTER! Providing high-quality frames and precision lenses with customer satisfaction guaranteed.
+                    </p>
+                </div>
+
+                <!-- Footer Col 2 -->
+                <div class="md:col-span-3 space-y-3">
+                    <h4 class="text-sm font-bold uppercase tracking-wider text-white">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#home" class="hover:text-tealBrand-500 transition-colors">Home</a></li>
+                        <li><a href="#services" class="hover:text-tealBrand-500 transition-colors">Products & Services</a></li>
+                        <li><a href="#collection" class="hover:text-tealBrand-500 transition-colors">Eyewear Catalog</a></li>
+                        <li><a href="#why-us" class="hover:text-tealBrand-500 transition-colors">Why Choose Us</a></li>
+                        <li><a href="#contact" class="hover:text-tealBrand-500 transition-colors">Contact Store</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Col 3 -->
+                <div class="md:col-span-4 space-y-3">
+                    <h4 class="text-sm font-bold uppercase tracking-wider text-white">Contact & Location</h4>
+                    <div class="space-y-2 text-sm">
+                        <p class="flex items-center gap-2.5">
+                            <i class="fa-solid fa-phone text-tealBrand-500"></i>
+                            <a href="tel:8811006544" class="text-white hover:text-tealBrand-400 font-semibold">8811006544</a>
+                        </p>
+                        <p class="flex items-center gap-2.5">
+                            <i class="fa-solid fa-location-dot text-tealBrand-500"></i>
+                            <span class="text-slate-300">North Bongaigaon, Assam</span>
+                        </p>
+                        <p class="flex items-center gap-2.5">
+                            <i class="fa-solid fa-truck-fast text-tealBrand-500"></i>
+                            <span class="text-slate-300">Home Delivery Available</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Copyright Bar -->
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+                <p>&copy; <span id="year"></span> Clear Vision Optical. All Rights Reserved.</p>
+                <p class="text-slate-500">Stylish Look – Clear Vision | Customer Satisfaction Guaranteed</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed Floating WhatsApp CTA Button for Mobile -->
+    <a href="https://wa.me/918811006544" target="_blank" class="fixed bottom-6 right-6 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-3xl z-50 transition-transform transform hover:scale-110" aria-label="Contact on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Interactive JavaScript Logic -->
+    <script>
+        // Set dynamic current year in footer
+        document.getElementById('year').innerText = new Date().getFullYear();
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a nav link is clicked
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Catalog filtering logic
+        function filterCatalog(category) {
+            const items = document.querySelectorAll('.product-item');
+            const buttons = document.querySelectorAll('.catalog-btn');
+
+            // Update active button state
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-tealBrand-700', 'text-white');
+                btn.classList.add('bg-slate-100', 'text-slate-700');
+            });
+
+            event.currentTarget.classList.remove('bg-slate-100', 'text-slate-700');
+            event.currentTarget.classList.add('bg-tealBrand-700', 'text-white');
+
+            // Filter items
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Contact / Callback form handler via WhatsApp redirect
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('custName').value;
+            const phone = document.getElementById('custPhone').value;
+            const service = document.getElementById('custService').value;
+
+            const message = `Hello Clear Vision Optical! My name is ${name}. Phone: ${phone}. I am inquiring about: ${service}.`;
+            const waUrl = `https://wa.me/918811006544?text=${encodeURIComponent(message)}`;
+
+            const formAlert = document.getElementById('formAlert');
+            formAlert.classList.remove('hidden');
+
+            setTimeout(() => {
+                window.open(waUrl, '_blank');
+            }, 800);
+        }
+    </script>
+</body>
+</html>
